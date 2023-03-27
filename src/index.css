@@ -1,13 +1,403 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+* {
+  font-family: 'Fondamento', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  font-size: 22px;
+}
+
+a {
+  font-size: 22px;
+}
+
+.top21 {
+  padding: 0px 30px;
+}
+
+.topbar1 p {
+  font-size: 11px;
+}
+
+.top22 {
+  border-left: 1px solid rgba(255, 255, 255, 0.521);
+}
+
+.nav12 {
+  padding: 0px 20px;
+}
+
+.nav-text a {
+  margin: 0px 20px;
+}
+
+.nav12 img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 15px;
+}
+
+.nav-logo {
+  margin-right: 20px;
+}
+
+.home1 {
+  background: #FCF1CC;
+}
+
+.home11 {
+  padding: 5rem 2rem;
+}
+
+.home111 {
+  margin-bottom: 3rem;
+}
+
+.home111 h1 {
+  font-size: 80px;
+}
+
+.home2 {
+  margin: 4rem 0rem;
+}
+
+.home21 {
+  padding: 0px 6rem;
+}
+
+.home211 {
+  margin-right: 5rem;
+  width: 45%;
+}
+
+.home211 img {
+  width: 100%;
+}
+
+.home212 {
+  width: 55%;
+}
+
+.text {
+  position: relative;
+}
+
+.text img {
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
+  left: 0px;
+}
+
+.text h3 {
+  font-size: 39px;
+}
+
+.home2121 p {
+  font-family: 'Forum', cursive;
+  margin-bottom: 10px;
+}
+
+.home2121 .text {
+  margin-bottom: 15px;
+}
+
+.home2-card {
+  margin-right: 10px;
+}
+
+.home2-card1 {
+  background: #FFCF16;
+  border-radius: 10px;
+  transform: rotate(-12.96deg);
+}
+
+.home2-card2 p {
+  font-family: 'Forum', cursive;
+  font-size: 18px;
+}
+
+.home2-card2 {
+  z-index: 10;
+  background: #FFF4C8;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.home2-card2 h4 {
+  margin-bottom: 10px;
+}
+
+.home31 {
+  padding: 0rem 4rem;
+}
+
+.home311 {
+  margin-bottom: 5rem;
+}
+
+.home3121 {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home3121 img {
+  margin-bottom: 30px;
+}
+
+.text img {
+  margin-bottom: 0 !important;
+}
+
+.home3 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.footer {
+  background: #1E1B1B;
+}
+
+.footer1 {
+  padding: 4rem 10rem;
+}
+
+.footer p,
+.footer h5 {
+  color: white;
+  font-family: 'Forum', cursive;
+}
+
+.foot0 h5 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.foot0 p {
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.foot3 h5 {
+  margin-bottom: 25px;
+}
+
+.topbar {
+  background-color: black;
+}
+
+.foot1 {
+  width: 30%;
+}
+
+.foot2 {
+  width: 30%;
+}
+
+.foot3 {
+  width: 40%;
+}
+
+.nav12 {
+  display: flex;
+}
+
+.mob-nav1 {
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  top: 48px;
+  right: -1000px;
+  transition: right 0.17s linear;
+  width: 100%;
+  background: white;
+  z-index: 99;
+  padding-top: 3rem;
+}
+
+.mob-nav1 a {
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.mob-active {
+  right: 0;
+}
+
+.mob-nav {
+  z-index: 9999;
+}
+.home2-card2 h4 {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 900px) {
+  .nav12 {
+    display: none;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .mob-nav {
+    display: block;
+  }
+
+  .mob-nav1 {
+    display: flex;
+  }
+
+  .nav11 {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav1 {
+    padding: 1rem;
+  }
+
+  .home21 {
+    padding: 0px 3rem;
+  }
+
+  .home21 {
+    flex-direction: column;
+  }
+
+  .home211 {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .home212 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text {
+    width: fit-content;
+    margin: auto;
+  }
+
+  .home2122 {
+    flex-direction: column;
+  }
+
+  .home2-card {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .home312 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home3121 {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .home311 {
+    margin-bottom: 3rem;
+  }
+
+  .home3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer1 {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .topbar1 {
+    padding: 0.5rem;
+  }
+
+  .home111 h1 {
+    font-size: 50px;
+  }
+
+  .home11 {
+    padding: 1.5rem;
+  }
+
+  .footer1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foot0 h5 {
+    margin-bottom: 6px;
+    font-size: 24px;
+  }
+
+  .foot0 p {
+    margin-bottom: 9px;
+  }
+
+  .foot1 {
+    width: 100%;
+  }
+
+  .foot2 {
+    width: 100%;
+  }
+
+  .foot3 {
+    width: 100%;
+  }
+
+  .foot0 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .top21 {
+    padding: 0px 9px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topbar1 p {
+    font-size: 9px;
+  }
+
+  .top21 {
+    padding: 0px 5px;
+  }
+  .home111 h1 {
+    font-size: 35px;
+  }
+  .home21 {
+    padding: 0px 1rem;
+  }
+  p{
+    font-size: 16px;
+  }
+  a{
+    font-size: 16px;
+  }
+  .text h3 {
+    font-size: 30px;
+  }
+  .home2-card2 h4 {
+    font-size: 20px;
+  }
 }
