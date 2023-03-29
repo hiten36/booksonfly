@@ -143,6 +143,7 @@ a {
 }
 
 .home3121 {
+  cursor: pointer;
   width: 20%;
   display: flex;
   justify-content: center;
@@ -226,6 +227,35 @@ a {
   padding-top: 3rem;
 }
 
+.nav13 {
+  width: 45vmin;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  top: 42px;
+}
+.cus-modal{
+  background: rgba(0, 0, 0, 0.185);
+}
+#registerModal{
+  z-index: 999999;
+}
+#registerModal label{
+  font-size: 18px;
+}
+#registerModal input{
+  font-size: 18px;
+}
+#registerModal button{
+  font-size: 18px;
+}
+
 .mob-nav1 a {
   margin-bottom: 20px;
   padding: 5px;
@@ -238,6 +268,7 @@ a {
 .mob-nav {
   z-index: 9999;
 }
+
 .home2-card2 h4 {
   font-size: 24px;
 }
@@ -323,6 +354,12 @@ a {
   .footer1 {
     padding: 2rem;
   }
+  .nav13{
+    display: none;
+  }
+  .glass{
+    top: 150px;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -382,22 +419,38 @@ a {
   .top21 {
     padding: 0px 5px;
   }
+
   .home111 h1 {
     font-size: 35px;
   }
+
   .home21 {
     padding: 0px 1rem;
   }
-  p{
+
+  p {
     font-size: 16px;
   }
-  a{
+
+  a {
     font-size: 16px;
   }
+
   .text h3 {
     font-size: 30px;
   }
+
   .home2-card2 h4 {
     font-size: 20px;
+  }
+
+  #registerModal label{
+    font-size: 13px;
+  }
+  #registerModal input{
+    font-size: 13px;
+  }
+  #registerModal button{
+    font-size: 13px;
   }
 }

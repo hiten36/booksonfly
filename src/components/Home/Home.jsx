@@ -1,8 +1,10 @@
 import React from 'react'
+import RegisterModal from '../Modals/RegisterModal';
 
 const Home = () => {
     return (
         <>
+            <RegisterModal />
             <div className="home-main">
                 <div className="home1">
                     <div className="home11 text-center">
@@ -67,28 +69,36 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="home312 flex justify-between">
-                            <div className="home3121">
+                            <div onClick={()=>{
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }} className="home3121">
                                 <img src="/images/p9.png" alt="" />
                                 <div className="text">
                                     <img src="/images/p3.png" alt="" />
                                     <p className='text-center'>New Books</p>
                                 </div>
                             </div>
-                            <div className="home3121">
+                            <div onClick={()=>{
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }} className="home3121">
                                 <img src="/images/p10.png" alt="" />
                                 <div className="text">
                                     <img src="/images/p3.png" alt="" />
                                     <p className='text-center'>Old Books</p>
                                 </div>
                             </div>
-                            <div className="home3121">
+                            <div onClick={()=>{
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }} className="home3121">
                                 <img src="/images/p11.png" alt="" />
                                 <div className="text">
                                     <img src="/images/p3.png" alt="" />
                                     <p className='text-center'>Digital Books</p>
                                 </div>
                             </div>
-                            <div className="home3121">
+                            <div onClick={()=>{
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }} className="home3121">
                                 <img src="/images/p12.png" alt="" />
                                 <div className="text">
                                     <img src="/images/p3.png" alt="" />
