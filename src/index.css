@@ -22,7 +22,7 @@ a {
 }
 
 .topbar1 p {
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .top22 {
@@ -38,9 +38,21 @@ a {
 }
 
 .nav12 img {
+  cursor: pointer;
   width: 20px;
   height: 20px;
   margin: 0px 15px;
+}
+
+.nav12 svg {
+  margin: 0px 15px;
+  cursor: pointer;
+}
+.nav-logo{
+  width: 91px;
+}
+.nav-logo img{
+  width: 100%;
 }
 
 .nav-logo {

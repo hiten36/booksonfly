@@ -14,7 +14,7 @@ const Navbar = () => {
                             <p className='text-white'>Forget Password</p>
                         </div>
                         <div className="top21 top22">
-                            <p onClick={()=>{
+                            <p onClick={() => {
                                 document.getElementById('registerModal').classList.toggle('hidden');
                             }} className='text-white cursor-pointer'>Register / Login</p>
                         </div>
@@ -28,15 +28,21 @@ const Navbar = () => {
                 </div>
             </div>
             <nav className="navbar">
-                <div className="nav1 py-6 px-16 flex justify-between">
+                <div className="nav1 py-2.5 px-16 flex justify-between">
                     <div className="nav11 flex items-center">
                         <div className="nav-logo">
-                            <img src="/images/p1.png" alt="" />
+                            <img src="/images/c3.png" alt="" />
                         </div>
                         <div className="nav-text">
-                            <NavLink to="/">Buy</NavLink>
-                            <NavLink to="/">Sell</NavLink>
-                            <NavLink to="/">Share</NavLink>
+                            <NavLink onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }} to="/">BUY</NavLink>
+                            <NavLink onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }} to="/">SELL</NavLink>
+                            <NavLink onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }} to="/">SHARE</NavLink>
                         </div>
                         <div className="mob-nav hidden">
                             <svg onClick={() => {
@@ -46,9 +52,15 @@ const Navbar = () => {
                             </svg>
                         </div>
                         <div className="mob-nav1 hidden">
-                            <NavLink to="/">Buy</NavLink>
-                            <NavLink to="/">Sell</NavLink>
-                            <NavLink to="/">Share</NavLink>
+                            <NavLink onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }} to="/">Buy</NavLink>
+                            <NavLink onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }} to="/">Sell</NavLink>
+                            <NavLink onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }} to="/">Share</NavLink>
                         </div>
                     </div>
                     <div className="nav13 flex items-center">
@@ -64,9 +76,17 @@ const Navbar = () => {
 
                     </div>
                     <div className="nav12 flex items-center">
-                        <img src="/images/p6.png" alt="" />
-                        <img src="/images/p7.png" alt="" />
-                        <img src="/images/p5.png" alt="" />
+                        <svg onClick={() => {
+                            document.getElementById('registerModal').classList.toggle('hidden');
+                        }} xmlns="http://www.w3.org/2000/svg" width="23" height="24" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                        </svg>
+                        <img onClick={() => {
+                            document.getElementById('registerModal').classList.toggle('hidden');
+                        }} src="/images/p7.png" alt="" />
+                        <img onClick={() => {
+                            document.getElementById('registerModal').classList.toggle('hidden');
+                        }} src="/images/p5.png" alt="" />
                     </div>
                 </div>
             </nav>

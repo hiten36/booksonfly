@@ -7,17 +7,33 @@ const Footer = () => {
                 <div className="footer1 flex justify-between">
                     <div className="foot1 foot0">
                         <h5>Product type</h5>
-                        <p>Digital Books</p>
-                        <p>New Books</p>
-                        <p>Old Books</p>
-                        <p>Stationary</p>
+                        <p onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }}>Digital Books</p>
+                        <p onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }}>New Books</p>
+                        <p onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }}>Old Books</p>
+                        <p onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }}>Stationary</p>
                     </div>
                     <div className="foot2 foot0">
                         <h5>Quik Links</h5>
-                        <p>Home</p>
-                        <p>About Us</p>
-                        <p>FAQs</p>
-                        <p>Blogs</p>
+                        <p onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }}>Home</p>
+                        <p onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }}>About Us</p>
+                        <p onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }}>FAQs</p>
+                        <p onClick={() => {
+                                document.getElementById('registerModal').classList.toggle('hidden');
+                            }}>Blogs</p>
                     </div>
                     <div className="foot3 foot0">
                         <h5>Address:</h5>
