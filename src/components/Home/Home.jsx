@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import RegisterModal from '../Modals/RegisterModal';
 
 const Home = () => {
+    useEffect(()=>{
+        document.title='BOOKS ON FLY';
+    });
     return (
         <>
             <RegisterModal />
