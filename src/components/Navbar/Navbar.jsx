@@ -1,9 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import RegisterModal from '../Modals/RegisterModal';
 
-const Navbar = () => {
+const Navbar = ({notify}) => {
     return (
         <>
+            <RegisterModal notify={notify} />
             <div className='topbar'>
                 <div className="topbar1 py-2 px-16 flex justify-between">
                     <div className="top1">
