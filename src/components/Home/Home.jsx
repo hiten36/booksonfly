@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import RegisterModal from '../Modals/RegisterModal';
 
-const Home = () => {
+const Home = ({notify}) => {
     useEffect(()=>{
         document.title='BOOKS ON FLY';
     });
     return (
         <>
-            <RegisterModal />
+            <RegisterModal notify={notify} />
             <div className="home-main">
                 <div className="home1">
                     <div className="home11 text-center">

@@ -286,6 +286,19 @@ a {
 .home2-card2 h4 {
   font-size: 24px;
 }
+.admin-main div , .admin-main h4 , .admin-main p , .admin-main span , .admin-main select , .admin-main option{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sc-kgKVFY{
+  font-size: 30px;
+}
+.admin-main{
+  min-height: 70vh;
+}
+.Toastify{
+  z-index: 9999999999;
+  position: relative;
+}
 
 @media screen and (max-width: 1170px) {
   .nav1{
